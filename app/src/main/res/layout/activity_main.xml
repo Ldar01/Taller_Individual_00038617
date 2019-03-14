@@ -11,71 +11,98 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:layout_weight="1"
+        android:weightSum="1"
         android:gravity="center">
 
         <ImageView
-            android:layout_width="140dp"
-            android:layout_height="140dp"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
             android:layout_gravity="center"
-            android:src="@drawable/profile" />
+            android:src="@drawable/profile"
+            android:layout_weight="1"
+            android:layout_marginTop="@dimen/dimension_image_profile"/>
 
 
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:orientation="vertical"
-        android:layout_weight="2"
-        android:gravity="center">
+        android:weightSum="2"
+        android:gravity="center|top">
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/text_my_name"
-            android:layout_gravity="center"
+            android:textAlignment="center"
             android:textColor="@color/Color_black"
-            android:textSize="25dp"/>
+            android:textSize="25sp"
+            android:layout_margin="@dimen/dimension_name"
+            android:padding="@dimen/dimension_padding_text"/>
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:layout_weight="4"
-            >
+            android:weightSum="4"
+            android:layout_margin="@dimen/dimension_name"
+            android:gravity="center">
             <ImageView
-                android:layout_width="20dp"
-                android:layout_height="20dp"
-                android:src="@drawable/facebook" />
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/facebook"
+                android:layout_weight="1"
+                android:layout_margin="@dimen/dimension_text_info"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/dimension_text_info"
+                android:text="@string/text_my_facebook"
+                android:layout_weight="2"
+                android:padding="@dimen/dimension_text_info_socialmedia"
+                android:textAlignment="center"/>
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/instagram"
+                android:layout_weight="1"
+                android:layout_margin="@dimen/dimension_text_info"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/text_my_facebook" />
-
-            <ImageView
-                android:layout_width="20dp"
-                android:layout_height="20dp"
-                android:src="@drawable/instagram" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/text_my_instagram"/>
+                android:text="@string/text_my_instagram"
+                android:layout_weight="2"
+                android:layout_margin="@dimen/dimension_text_info"
+                android:padding="@dimen/dimension_text_info_socialmedia"
+                android:textAlignment="center"/>
 
         </LinearLayout>
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="2">
+            android:weightSum="2"
+            android:orientation="horizontal"
+            android:layout_margin="@dimen/dimension_name"
+            android:gravity="center"
+            >
             <ImageView
-                android:layout_width="20dp"
-                android:layout_height="20dp"
-                android:src="@drawable/github" />
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/github"
+                android:layout_weight="1"
+                android:layout_margin="@dimen/dimension_text_info"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/text_my_github"/>
+                android:text="@string/text_my_github"
+                android:layout_weight="2"
+                android:layout_margin="@dimen/dimension_text_info"
+                android:padding="@dimen/dimension_text_info_socialmedia"
+                android:textAlignment="center"/>
         </LinearLayout>
     </LinearLayout>
 

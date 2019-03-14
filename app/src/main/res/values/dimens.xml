@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="dimension_image_profile">50dp</dimen>
+    <dimen name="dimension_name">40dp</dimen>
+    <dimen name="dimension_padding_text">10dp</dimen>
+    <dimen name="dimension_text_info">10dp</dimen>
+    <dimen name="dimension_text_info_socialmedia">5dp</dimen>
+</resources>
