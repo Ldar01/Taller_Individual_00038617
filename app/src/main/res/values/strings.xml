@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Taller_Individual_1</string>
+    <string name="text_my_name">Luisa Arevalo</string>
+    <string name="text_my_facebook">Luisa Rodas</string>
+    <string name="text_my_instagram">luisarodas1</string>
+    <string name="text_my_github">Ldar01</string>
 </resources>
